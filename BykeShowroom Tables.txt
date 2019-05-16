@@ -1,0 +1,124 @@
+Create Database BikeDatabase;
+
+use BikeDatabase;
+
+
+
+Create table AdminLoginTab
+(uName varchar(50),
+pWord varchar(50));
+
+insert into adminlogintab values('admin','admin');
+
+
+Create table ModelTab
+(ModelName varchar(50),
+details varchar(50));
+
+
+
+Create table VehicleTab
+(VehicleName varchar(50),
+details varchar(250),
+ModelName varchar(50),
+specification  varchar(250),
+price int,
+rent int);
+
+Create table VehiclePriceTab
+(VehicleName varchar(50),
+price int,
+RoadTax int,
+Insurance int,
+RegCharges int,
+rent int);
+
+Create table FAQTab
+(qno int,
+ProductName varchar(50),
+question varchar(250),
+Answer varchar(250));
+
+Insert into faqtab(qno) values(1000);
+
+
+
+Create table QualificationTab
+(edName varchar(50),
+details varchar(50));
+
+Create table ProfessionTab
+(jobName varchar(50),
+details varchar(50));
+
+Create table renttab(
+vehiclename varchar(20),
+rent varchar(20));
+
+
+
+
+drop table custdetTab;
+
+Create table CustDetTab
+(uName varchar(50),
+pWord varchar(50),
+custName varchar(50),
+cAdd varchar(250),
+MobileNo  varchar(50),
+email  varchar(50),
+qualification  varchar(50),
+designation  varchar(50));
+
+
+
+Create table QATab
+(qno int,
+qDate date,
+uName varchar(50),
+ProductName varchar(50),
+question varchar(250),
+Answer varchar(250),
+empcode varchar(25));
+
+
+insert into qatab(qno) values(1000);
+
+drop table empdettab;
+Create table EmpDetTab
+(empcode varchar(50),
+pWord varchar(50),
+empName varchar(50),
+eAdd varchar(250),
+phonenos  varchar(50),
+email  varchar(50),
+qualification  varchar(50),
+designation  varchar(50));
+
+
+Create table BookingTab
+(rNo int,
+rDate   varchar(50),
+uName  varchar(50),
+VehicleName varchar(50),
+PaidAmt int,
+paytype varchar(50),
+Details varchar(50),
+Rem1 varchar(50));
+
+drop table TestDriveTab;
+Create table TestDriveTab
+(tdNo int,
+tdDate   varchar(50),
+uName  varchar(50),
+VehicleName  varchar(50),
+details  varchar(250));
+
+
+
+
+
+
+
+
+
